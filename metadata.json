@@ -1,0 +1,7 @@
+{
+  "name": "LogiTruck - Sistema de Operação Logística",
+  "description": "Aplicativo mobile-first para motoristas de caminhão gerenciarem operações de containers, rastreamento de localização e controle de janelas de carga/descarga.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
