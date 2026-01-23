@@ -1,5 +1,7 @@
 
 export enum AppStep {
+  LOGIN = 'LOGIN',
+  CADASTRO = 'CADASTRO',
   CHAMADA = 'CHAMADA',
   OPERACAO = 'OPERACAO',
   VIAGENS = 'VIAGENS',
@@ -25,8 +27,16 @@ export interface LocationData {
   timestamp: number;
 }
 
+export interface Issue {
+  id: string;
+  text: string;
+  timestamp: number;
+}
+
 export interface DriverInfo {
   name: string;
+  cpf: string;
+  birthDate: string;
   plate: string;
   role: UserRole;
 }
@@ -39,6 +49,7 @@ export interface Job {
   destino: string;
   janela: string;
   status: OperationStatus;
+  issues: Issue[];
   checkpoints: {
     arrivedOrigin?: number;
     leftOrigin?: number;
